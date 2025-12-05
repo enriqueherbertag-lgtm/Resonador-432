@@ -1,3 +1,8 @@
+### ⚠️ ADVERTENCIA
+**DISPOSITIVO EN DESARROLLO - NO APROBADO PARA VENTA**
+
+## 🚨 ADVERTENCIA MÉDICA / LEGAL
+
 # 🩺 Resonador 432
 **Dispositivo médico open-source de resonancia dual para cáncer (adyuvante)**
 
@@ -5,8 +10,7 @@
 [![FDA Clase II](https://img.shields.io/badge/FDA-Clase_II-green)]()
 [![Costo USD 95](https://img.shields.io/badge/Costo-USD_95-orange)]()
 
-### ⚠️ ADVERTENCIA
-**DISPOSITIVO EN DESARROLLO - NO APROBADO PARA VENTA**
+
 
 ### 🎯 PROPÓSITO
 Parche 4x4cm que aplica 12 Hz (mecánico) + 432 Hz (magnético) para re-sincronizar células cancerosas.
