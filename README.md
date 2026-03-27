@@ -1,5 +1,7 @@
 # Resonador 432 - Sistema de Feedback de Frecuencia
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 > **Nota**: Este repositorio contiene la **implementación técnica y de ingeniería** del sistema de medición y actuación con feedback del proyecto Resonador 432. Para la documentación del anteproyecto (visión, negocio, regulatorio), consulta la carpeta [`documentos_anteproyecto/`](./documentos_anteproyecto).
 
 ## Objetivo Técnico
