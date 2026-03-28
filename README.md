@@ -35,4 +35,3 @@ text
 2.  Consulta el **protocolo de medición y el algoritmo de feedback** en [`/docs/02_PROTOCOLO_MEDICION_FEEDBACK.md`](./docs/02_PROTOCOLO_MEDICION_FEEDBACK.md).
 3.  Carga el firmware (`/firmware/resonador432_firmware.ino`) en una placa ESP32.
 
-**Para uso comercial bajo una licencia propietaria diferente** (que no requiere publicar modificaciones), consulta los términos en [COMERCIAL.md](./COMERCIAL.md) o contacta al autor.
