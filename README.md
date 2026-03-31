@@ -15,6 +15,15 @@ Implementar un sistema de bucle cerrado (closed-loop) que:
 3. **Actúa** aplicando una frecuencia mecánica de 12 Hz y una magnética de 432 Hz, ajustando la potencia en base a la medición.
 
 ---
+## Cita
+
+Si usás Goliat-Orbital en tu investigación, por favor citá:
+
+Aguayo H., E. (2026). Goliat-Orbital: Captura y reciclaje de basura espacial (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.<img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/52e6fd22-02a5-4e8b-8e44-35187028d0e0" />
+
+
+
+
 
 ##  Arquitectura del Sistema
 
