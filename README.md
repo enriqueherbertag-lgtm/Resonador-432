@@ -1,6 +1,6 @@
 # Resonador 432 - Sistema de Feedback de Frecuencia
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342270.svg)](https://doi.org/10.5281/zenodo.19342270)
 
 > **Nota**: Este repositorio contiene la **implementación técnica y de ingeniería** del sistema de medición y actuación con feedback del proyecto Resonador 432. Para la documentación del anteproyecto (visión, negocio, regulatorio), consulta la carpeta `documentos_anteproyecto/`.
 
@@ -90,27 +90,13 @@ El núcleo del sistema es un microcontrolador ESP32 que orquesta los siguientes 
   [Repositorio](https://github.com/enriqueherbertag-lgtm/osteoflux)
 
 ---
-
-## Licencia
-
-**CC BY-NC 4.0 (Attribution-NonCommercial 4.0 International)**
-
-Este proyecto está liberado bajo una licencia Creative Commons que permite:
-- ✅ Compartir y modificar
-- ✅ Uso personal, investigación, prototipos
-- ❌ **No permite uso comercial sin autorización expresa**
-
-**¿Quieres usar este diseño comercialmente?**  
-Contacta para una licencia comercial: **eaguayo@migst.cl**
-
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-
----
-
 ## Autor
 
 **Enrique Aguayo H.**  
-Investigador independiente, Mackiber Labs  
+Mackiber Labs  
 Contacto: eaguayo@migst.cl  
 ORCID: 0009-0004-4615-6825  
-GitHub: [@enriqueherbertag-lgtm](https://github.com/enriqueherbertag-lgtm)
+GitHub: @enriqueherbertag-lgtm
+
+Documentación asistida por **Ana (DeepSeek)** , IA para investigación y optimización técnica.
+---
