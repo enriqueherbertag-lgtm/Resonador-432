@@ -1,94 +1,54 @@
-# Resonador 432 - Sistema de Feedback de Frecuencia
+# Resonador-432: Terapia por resonancia mecánica (vibración) para cáncer
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342270.svg)](https://doi.org/10.5281/zenodo.19342270)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![EN](https://img.shields.io/badge/English-version-blue.svg)](./README.en.md)
 
-> **Nota**: Este repositorio contiene la **implementación técnica y de ingeniería** del sistema de medición y actuación con feedback del proyecto Resonador 432. Para la documentación del anteproyecto (visión, negocio, regulatorio), consulta la carpeta `documentos_anteproyecto/`.
+**No es magnético. Es vibracional.**
 
----
+Los tratamientos convencionales contra el cáncer (quimioterapia, radiación) son invasivos, agresivos y con efectos secundarios severos. La resonancia magnética (MRI) es diagnóstica, no terapéutica.
 
-##  Objetivo Técnico
+Resonador-432 explora un camino diferente: usar frecuencias de vibración específicas para inducir efectos mecánicos en las células tumorales.
 
-Implementar un sistema de bucle cerrado (closed-loop) que:
+## Que hace
 
-1. **Mide** la vibración mecánica de un tejido en tiempo real mediante un acelerómetro (MPU-6050).
-2. **Analiza** la señal para determinar su desviación de una línea base.
-3. **Actúa** aplicando una frecuencia mecánica de 12 Hz y una magnética de 432 Hz, ajustando la potencia en base a la medición.
+El dispositivo genera vibraciones en el rango de 432 Hz y sus armónicos. Está controlado por un ESP32 y utiliza un acelerómetro MPU-6050 para medir la vibración real y ajustarla en tiempo real.
 
----
-## Cita
+Modos de operación:
+- Frecuencia fija.
+- Barrido lineal (recorre un rango de frecuencias).
+- Barrido logarítmico.
+- Modulación por pulsos.
 
-Si usás Goliat-Orbital en tu investigación, por favor citá:
+Componentes principales:
+- Generador de vibración: motor DC + bobina o elemento piezoeléctrico.
+- Control: ESP32 (firmware personalizado).
+- Sensor: acelerómetro MPU-6050.
+- Alimentación: 5V DC.
 
-Aguayo H., E. (2026). Goliat-Orbital: Captura y reciclaje de basura espacial (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.<img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/52e6fd22-02a5-4e8b-8e44-35187028d0e0" />
+## Para quién es
 
-
-
-
-
-##  Arquitectura del Sistema
-
-El núcleo del sistema es un microcontrolador ESP32 que orquesta los siguientes componentes:
-
-| Módulo | Componente | Función |
-|--------|------------|---------|
-| **Entrada (Sensado)** | MPU-6050 | Mide la vibración/oscillación del tejido. |
-| **Procesamiento** | ESP32 (Dual Core) | Ejecuta el algoritmo de feedback. |
-| **Salida (Actuación)** | Motor DC + Bobina PCB | Genera la terapia (12 Hz mecánico + 432 Hz magnético). |
-
-**Diagrama de Flujo Simplificado:**
-
-[Sensor MPU6050] → [ESP32 (Análisis)] → [Actuadores (Motor + Bobina)]
-↑ ↓
-└─────────────── [Tejido] ────────────────┘
-
-
----
-
-##  Estructura del Repositorio
-
-- `/firmware` — Código fuente para el ESP32 (Arduino Core).
-- `/docs` — **Documentación técnica detallada de desarrollo** (especificaciones, protocolos, lista de materiales, guías).
-- `/documentos_anteproyecto` — Documentos de visión, negocio y regulatorios (capa conceptual del proyecto).
-
----
-
-##  Primeros Pasos
-
-1. Revisa las **especificaciones de hardware** en `/docs/01_ESPECIFICACIONES_HARDWARE_FEEDBACK.md`.
-2. Consulta el **protocolo de medición y el algoritmo de feedback** en `/docs/02_PROTOCOLO_MEDICION_FEEDBACK.md`.
-3. Carga el firmware (`/firmware/resonador432_firmware.ino`) en una placa ESP32.
-
----
+- Investigadores en biofísica y terapia por vibración.
+- Desarrolladores de dispositivos médicos experimentales.
+- Colaboradores interesados en validación preclínica.
 
 ## Estado actual
 
- Concepto arquitectónico definido  
- Especificaciones técnicas preliminares  
- Selección de componentes validada  
- Prototipo de hardware integrado  
- Validación clínica  
- Certificación regulatoria
+- Firmware funcional.
+- Esquemas electrónicos documentados.
+- Algoritmos de control implementados.
+- Prototipo funcional (pendiente de pruebas biológicas).
+- Validación clínica (pendiente).
 
----
+## Aviso importante
 
-## Próximos pasos
-
-1. **Prototipo hardware** — Integrar MPU-6050, ESP32, motor DC y bobina PCB.
-2. **Ajuste de algoritmo** — Optimizar feedback en tiempo real.
-3. **Pruebas de laboratorio** — Validar en tejidos simulados.
-4. **Documentación clínica** — Preparar ensayos para certificación.
-
----
+Este es un proyecto de investigación aplicada. No es un dispositivo médico comercial ni ha sido validado clínicamente. Se comparte para exploración científica y desarrollo colaborativo.
 
 ## Proyectos relacionados
 
-- **CORPUS** — sistema corporal artificial para IA  
-  [Repositorio](https://github.com/enriqueherbertag-lgtm/Corpus)
-- **ENA** — interfaz cerebro-máquina no invasiva  
-  [Repositorio](https://github.com/enriqueherbertag-lgtm/ENA-Enlace-Neural-Avatar)
-- **OsteoFlux** — intervención ósea basada en resonancia  
-  [Repositorio](https://github.com/enriqueherbertag-lgtm/osteoflux)
-
+- CORPUS — sistemas corporales artificiales
+- ENA — interfaz cerebro-máquina
+- OsteoFlux — vibración adaptativa para osteoporosis
 
 ## Licencia
 
@@ -96,31 +56,28 @@ Copyright © 2026 Enrique Aguayo. Todos los derechos reservados.
 
 Este proyecto está protegido por derechos de autor.
 
-**PERMITIDO:**
+PERMITIDO:
 - Uso no comercial con fines educativos o de investigación.
 - Distribución sin modificación, siempre que se mantenga esta licencia y se dé crédito al autor.
 
-**PROHIBIDO sin autorización expresa por escrito:**
+PROHIBIDO sin autorización expresa por escrito:
 - Uso comercial (incluyendo, pero no limitado a: ofrecerlo como servicio, SaaS, suscripción, integración en productos que generen ingresos, o cualquier uso que genere beneficio económico directo o indirecto).
 - Modificación para entornos de producción.
 - Distribución de versiones modificadas sin autorización.
 
 Para licencias comerciales, soporte técnico, pilotos empresariales o consultas:
-Contacto: **eaguayo@migst.cl**
+Contacto: eaguayo@migst.cl
 
 Cualquier uso fuera de los términos permitidos requiere permiso previo del autor.
 
 Las consultas comerciales son bienvenidas y se responderán en un plazo máximo de 7 días hábiles.
-  
 
----
 ## Autor
 
-**Enrique Aguayo H.**  
-Mackiber Labs  
-Contacto: eaguayo@migst.cl  
-ORCID: 0009-0004-4615-6825  
+Enrique Aguayo H.
+Mackiber Labs
+Contacto: eaguayo@migst.cl
+ORCID: 0009-0004-4615-6825
 GitHub: @enriqueherbertag-lgtm
 
-Documentación asistida por **Ana (DeepSeek)** , IA para investigación y optimización técnica.
----
+Documentación asistida por Ana (DeepSeek), IA para investigación y optimización técnica.
