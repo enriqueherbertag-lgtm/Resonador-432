@@ -39,7 +39,6 @@ CORPUS toma la seguridad de nuestras implementaciones muy seriamente. Si crees q
 ## Contacto
 
 **Principal:** eaguayo@migst.cl  
-**Alternativo:** Abrir Issue con título "[SECURITY]" (sin detalles)
 
 ---
 
